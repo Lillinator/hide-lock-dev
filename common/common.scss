@@ -2,8 +2,6 @@
 
 $list: str-to-list("#{$categories}", "|");
 
-@if $categories !="" {
-
   @each $category in $categories {
 
     @if $category_drop_down !="" {
@@ -26,4 +24,4 @@ $list: str-to-list("#{$categories}", "|");
       }
     }
   }
-}
+
