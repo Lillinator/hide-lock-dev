@@ -1,9 +1,7 @@
-@import "str-to-list";
-
-$list: str-to-list("#{$categories_and_channels}", "|");
+$categories: 'staff';
 
 
-@each $category in $list {
+@each $category in $categories {
 
   .badge-wrapper.bullet span.badge-category {
     .d-icon-lock {
