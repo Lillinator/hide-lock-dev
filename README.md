@@ -1,2 +1,2 @@
 # Discourse Hide Category and Chat Channel Lock Badge Icons
-Hides the category lock badge icons in drop down boxes, category header breadcrumbs, chat channel thread, and the navigation sidebar menu.
+Hides the lock badge icons in secure category drop down boxes, header breadcrumbs, navigation sidebar menu and secure chat channels.
