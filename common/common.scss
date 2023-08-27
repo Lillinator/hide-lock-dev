@@ -10,18 +10,19 @@ $list: str-to-list("#{$categories}", "|");
           display: none;
         }
       }
+    }
 
-      @if $navigation_menu == "true" {
+    @if $navigation_menu == "true" {
         .sidebar-section-link-wrapper .sidebar-section-link-prefix.span .prefix-badge {
           display: none;
         }                
-      }
+    }
 
       @if $category_header_breadcrumb == "true" {
         .badge-wrapper .badge-category .d-icon {
           display: none;
         }
-      }
-    }
+     }
   }
+  
 
