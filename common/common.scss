@@ -1,6 +1,6 @@
 @import "str-to-list";
 
-$list: str-to-list("#{$categories}", "|");
+$list: str-to-list("#{$categories_and_channels}", "|");
 
   @each $category in $list {
 
