@@ -1,8 +1,8 @@
 {
-  "name": "Lock Badge Options",
+  "name": "Hide Lock Badge Icon",
   "component": true,
-  "about_url": "ttps://github.com/Lillinator/lock-badge-options/blob/main/README.md",
-  "license_url": "ttps://github.com/Lillinator/lock-badge-options/blob/main/LICENSE",
+  "about_url": "ttps://github.com/Lillinator/hide-lock-badge-icon/blob/main/README.md",
+  "license_url": "ttps://github.com/Lillinator/hide-lock-badge-icon/blob/main/LICENSE",
   "authors": "@Lilly",
   "theme_version": "1.0"
 }
