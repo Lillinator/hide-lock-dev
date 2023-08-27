@@ -2,6 +2,7 @@
 
 $list: str-to-list("#{$categories_and_channels}", "|");
 
+
 @each $category in $list {
 
   .badge-wrapper.bullet span.badge-category {
