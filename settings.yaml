@@ -1,5 +1,5 @@
 categories:
-  type: category
+  type: list
   default: ""
   description:
     en: "List the secure categories to hide the lock badge icon for."
