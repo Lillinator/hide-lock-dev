@@ -2,5 +2,6 @@ categories_and_channels:
   type: list
   default: ""
   description:
-    en: "List of the secure categories and chat channels to hide the lock badge icon for. <br>
-    Must be in this semi-colon delimited format with category-slug or channel-slug;category-ID (not channel-ID)."
+    en: "List of the secure categories and chat channels to hide the lock badge icon for. 
+    Must be in semi-colon delimited format with category-slug or channel-slug;category-ID (not channel-ID!).<br>
+    (for exmaple: staff;3 or off-topic;5)"
