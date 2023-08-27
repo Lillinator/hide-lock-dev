@@ -1,6 +1,6 @@
 @import "str-to-list";
 
-$list: str-to-list("#{$categories_and_channels", "|");
+$list: str-to-list("#{$categories_and_channels}", "|");
 $nested-list: ();
 
 @each $item in $list {
