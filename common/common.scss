@@ -1,21 +1,14 @@
+.category-staff {
+  .d-icon-lock {
+    display: none;
+ }
+}
 
 
-  .badge-wrapper.bullet span.badge-category {
+.category-drop [data-value="3"] .restricted,
+    [href^="/chat/c/staff"], 
+    [href^="/c/staff"] {
     .d-icon-lock {
-      display: none;
+        display: none;
     }
-  }
-
-  .sidebar-section-link-wrapper .sidebar-section-link-prefix.span .prefix-badge,
-  .sidebar-section-link-wrapper .sidebar-section-link-prefix.icon .prefix-badge {
-    display: none;
-  }
-
-  .badge-wrapper .badge-category .d-icon {
-    display: none;
-  }
-
-  .chat-channel-title .d-icon-lock {
-    display: none;
-  }
-
+}
