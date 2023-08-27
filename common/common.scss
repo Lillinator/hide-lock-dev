@@ -1,3 +1,14 @@
+@import "str-to-list";
+
+$list: str-to-list("#{$categories}", "|");
+$nested-list: ();
+
+@each $item in $list {
+    
+  $item: str-to-list("#{$item}", ";");
+  $nested-list: append($nested-list, $item);
+}
+
 .search-menu .results .restricted,
 .category-drop [data-value="3"] .restricted,
     [href^="/chat/c/staff"], 
