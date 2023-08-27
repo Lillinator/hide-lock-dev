@@ -4,6 +4,11 @@
  }
 }
 
+.search-menu .results .restricted,
+    [href^="/c/staff"] {
+      display: none;
+}
+
 .category-drop [data-value="3"] .restricted,
     [href^="/chat/c/staff"], 
     [href^="/c/staff"] {
