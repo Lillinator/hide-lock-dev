@@ -17,7 +17,7 @@ $list: str-to-list("#{$categories}", "|");
         }                
       }
 
-      @if $category_header_breadcrumb !==" {
+      @if $category_header_breadcrumb !=="" {
         .badge-wrapper .badge-category .d-icon {
           display: none;
         }
