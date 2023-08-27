@@ -6,18 +6,18 @@ categories:
 
 category_drop_down:
   type: bool
-  default: ""
+  default: false
   description:
     en: "Hide the lock icon badge for secure categories in the category breadcrumb drop down selector."
 
 navigation_menu:
   type: bool
-  default: ""
+  default: false
   description:
     en: "Hide the lock icon badge for secure categories in the category section of the navigation sidebar menu."
 
 category_header_breadcrumb:
   type: bool
-  default: ""
+  default: false
   description:
     en: "Hide the lock icon badge for secure categories in the category section of the navigation sidebar menu."
