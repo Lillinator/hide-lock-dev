@@ -14,9 +14,9 @@ $list: str-to-list("#{$categories}", "|");
       }
 
       @if $navigation_menu !="" {
-        .sidebar-section-link-wrapper .sidebar-section-link-prefix.icon .prefix-badge {
+        .sidebar-section-link-wrapper .sidebar-section-link-prefix.span .prefix-badge {
           display: none;
-        }
+        }                
       }
 
       @if $category_header_breadcrumb !="" {
