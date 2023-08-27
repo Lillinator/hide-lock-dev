@@ -5,19 +5,24 @@ $list: str-to-list("#{$categories}", "|");
 @if $categories !="" {
 
   @each $category in $categories {
-
-    @if 
-    .badge-wrapper.bullet span.badge-category {
-    .d-icon-lock {
+    
+    @if $category_drop_down !=="" {
+      .badge-wrapper.bullet span.badge-category {
+      .d-icon-lock {
         display: none;
        }
     }
-    .sidebar-section-link-wrapper .sidebar-section-link-prefix.icon .prefix-badge {
+    @if $navigation_menu !=="" {
+      .sidebar-section-link-wrapper .sidebar-section-link-prefix.icon .prefix-badge {
         display: none;
-    }
-    .badge-wrapper .badge-category .d-icon {
+       }
+     }
+    @if $category_header_breadcrumb !=="" {
+      .badge-wrapper .badge-category .d-icon {
         display: none;
+      }
     }
-  }
+   }   
+ }
 }
 
