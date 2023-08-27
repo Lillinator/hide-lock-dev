@@ -2,7 +2,7 @@ categories:
   type: categories
   default: ""
   description:
-    en: "The secure categories to hide the lock badge icon for."
+    en: "List the secure categories to hide the lock badge icon for."
 
 category_drop_down:
   type: bool
