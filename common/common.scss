@@ -5,17 +5,19 @@ $list: str-to-list("#{$categories}", "|");
 @if $categories !="" {
 
   @each $category in $categories {
+
+    @if 
     .badge-wrapper.bullet span.badge-category {
     .d-icon-lock {
         display: none;
        }
     }
-    .category-drop [data-value="ID"] .restricted,
-    [href^="/c/#{$categories}"] {
-      .d-icon-lock {
+    .sidebar-section-link-wrapper .sidebar-section-link-prefix.icon .prefix-badge {
         display: none;
-       }
-    }  
+    }
+    .badge-wrapper .badge-category .d-icon {
+        display: none;
+    }
   }
 }
 
