@@ -13,8 +13,7 @@ $nested-list: (
     $nested-list: append($nested-list, $item);
   }
 
-  @each $lock-icon,
-  $iconID in $nested-list {
+  @each $lock-icon, $iconID in $nested-list {
 
     .search-menu .results .restricted,
     .category-drop [data-value="#{$iconID}"] .restricted,
