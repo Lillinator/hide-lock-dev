@@ -1,0 +1,9 @@
+$categories: 'cars', 'trucks', 'motorcycles', 'staff', 'lounge';
+
+@each $category in $categories {
+    .badge-wrapper.bullet span.badge-category {
+    .d-icon-lock {
+        display: none;
+       }
+    }
+}
