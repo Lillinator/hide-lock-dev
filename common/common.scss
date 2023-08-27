@@ -1,6 +1,6 @@
 @import "str-to-list";
 
-$list: str-to-list("#{$categories}", "|");
+$list: str-to-list("#{$categories_and_channels", "|");
 $nested-list: ();
 
 @each $item in $list {
@@ -9,10 +9,12 @@ $nested-list: ();
   $nested-list: append($nested-list, $item);
 }
 
+@each $lock-icon, $iconID in $nested-list {
+
 .search-menu .results .restricted,
-.category-drop [data-value="3"] .restricted,
-    [href^="/chat/c/staff"], 
-    [href^="/c/staff"] {
+.category-drop [data-value="#{$iconID}"] .restricted,
+    [href^="/chat/c/#{$lock-icon}"], 
+    [href^="/c/#{$lock-icon}"] {
     .d-icon-lock {
         display: none;
     }
