@@ -2,7 +2,7 @@
 
 $list: str-to-list("#{$categories}", "|");
 
-  @each $category in $categories {
+  @each $category in $list {
 
     @if $category_drop_down == "true" {
       .badge-wrapper.bullet span.badge-category {
