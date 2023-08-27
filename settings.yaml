@@ -2,4 +2,4 @@ categories:
   type: list
   default: ""
   description:
-    en: "List the secure categories to hide the lock badge icon for."
+    en: "List the secure categories and channels to hide the lock badge icon for."
