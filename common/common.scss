@@ -1,9 +1,21 @@
-$categories: 'cars', 'trucks', 'motorcycles', 'staff', 'lounge';
+@import "str-to-list";
 
-@each $category in $categories {
+$list: str-to-list("#{$categories}", "|");
+
+@if $categories !="" {
+
+  @each $category in $categories {
     .badge-wrapper.bullet span.badge-category {
     .d-icon-lock {
         display: none;
        }
     }
+    .category-drop [data-value="ID"] .restricted,
+    [href^="/c/#{$categories}"] {
+      .d-icon-lock {
+        display: none;
+       }
+    }  
+  }
 }
+
