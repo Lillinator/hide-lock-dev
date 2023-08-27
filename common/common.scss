@@ -1,26 +1,28 @@
 @import "str-to-list";
 
 $list: str-to-list("#{$categories_and_channels}", "|");
-$nested-list: ();
+$nested-list: (
+);
 
 
-@if $categories_and_channels != "" {
+@if $categories_and_channels !="" {
 
-@each $item in $list {
-    
-  $item: str-to-list("#{$item}", ";");
-  $nested-list: append($nested-list, $item);
-}
+  @each $item in $list {
 
-@each $lock-icon, $iconID in $nested-list {
+    $item: str-to-list("#{$item}", ";");
+    $nested-list: append($nested-list, $item);
+  }
 
-.search-menu .results .restricted,
-.category-drop [data-value="#{$iconID}"] .restricted,
-    [href^="/chat/c/#{$lock-icon}"], 
+  @each $lock-icon,
+  $iconID in $nested-list {
+
+    .search-menu .results .restricted,
+    .category-drop [data-value="#{$iconID}"] .restricted,
+    [href^="/chat/c/#{$lock-icon}"],
     [href^="/c/#{$lock-icon}"] {
-    .d-icon-lock {
+      .d-icon-lock {
         display: none;
-        }
+      }
     }
-}
+  }
 }
