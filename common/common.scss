@@ -16,6 +16,12 @@ $list: str-to-list("#{$categories}", "|");
 
         .badge-wrapper .badge-category .d-icon {
           display: none;
-        }     
+        }   
+    
+       .chat-channel-title .d-icon-lock {
+          display: none;
+       }
 } 
+
+
   
