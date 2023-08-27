@@ -17,5 +17,6 @@ $nested-list: ();
     [href^="/c/#{$lock-icon}"] {
     .d-icon-lock {
         display: none;
+        }
     }
 }
