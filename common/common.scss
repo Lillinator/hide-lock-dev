@@ -1,9 +1,11 @@
 .category-staff {
-  .menu-panel .search-link .d-icon, .menu-panel .categories-link .d-icon, .d-icon-lock {
+  .d-icon-lock {
     display: none;
  }
 }
-
+.menu-panel .search-link .d-icon-lock {
+    display: none;
+}
 
 .category-drop [data-value="3"] .restricted,
     [href^="/chat/c/staff"], 
