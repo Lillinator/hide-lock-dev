@@ -24,4 +24,16 @@ $nested-list: (
       }
     }
   }
-}
+  
+  @if $show_lock_icons_for_staff {
+  
+    .staff .search-menu .results .restricted,
+    .staff .category-drop [data-value="#{$iconID}"] .restricted,
+    .staff [href^="/chat/c/#{$lock-icon}"],
+    .staff [href^="/c/#{$lock-icon}"] {
+      .d-icon-lock {
+        display: block;
+      }
+    }
+  }
+}  
