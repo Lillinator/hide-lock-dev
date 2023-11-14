@@ -6,8 +6,8 @@ categories_and_channels:
     Must be in semi-colon delimited format with category-slug;category-ID. Channel slug name must be same as respective category slug name. Separate parent categories and subcategories with a dash and use subcategory ID.<br>
     (For example: staff;3 or off-topic;5)"
 
-Show all lock icons for admins:
+show_lock_icons_for_staff:
   type: bool
   default: "true"
   description:
-    en: "Disable this if you want the lock badge icon to be hidden for admins as well as regular users."
+    en: "Disable this if you want the lock badge icon to be hidden for staff as well as regular users."
