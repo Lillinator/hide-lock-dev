@@ -8,6 +8,6 @@ categories_and_channels:
     
 show_lock_icons_for_staff:
   type: bool
-  default: "true"
+  default: true
   description:
     en: "Disable this if you want the lock badge icon to be hidden for staff as well as regular users."
