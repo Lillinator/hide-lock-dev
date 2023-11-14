@@ -13,6 +13,20 @@ $nested-list: ();
 
   @each $lock-icon, $iconID in $nested-list {
 
+    @if $show_lock_icons_for_staff {
+    body:not(.staff) {
+  
+    .search-menu .results .restricted,
+    .category-drop [data-value="#{$iconID}"] .restricted,
+    [href^="/chat/c/#{$lock-icon}"],
+    [href^="/c/#{$lock-icon}"] {
+      .d-icon-lock {
+        display: none;
+        } 
+      }
+    }
+   }  
+   @else {
     .search-menu .results .restricted,
     .category-drop [data-value="#{$iconID}"] .restricted,
     [href^="/chat/c/#{$lock-icon}"],
@@ -21,17 +35,6 @@ $nested-list: ();
         display: none;
       }
     }
-  }
-  
-  @if $show_lock_icons_for_staff {
-  
-    .staff .search-menu .results .restricted,
-    .staff .category-drop [data-value="#{$iconID}"] .restricted,
-    .staff [href^="/chat/c/#{$lock-icon}"],
-    .staff [href^="/c/#{$lock-icon}"] {
-      .d-icon-lock {
-        display: block;
-      }
-    }
-  }
-}  
+  } 
+ }
+}
